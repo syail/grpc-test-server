@@ -1,0 +1,9 @@
+services:
+  app:
+    build: .
+    container_name: proto_demo_app
+    restart: always
+    labels:
+      - "traefik.http.routers.proto_demo_app.rule=Host(`<HOST>`)"
+      - "traefik.http.routers.proto_demo_app.entrypoints=websecure"
+      - "traefik.http.routers.proto_demo_app.tls.certresolver=dnsresolver"
