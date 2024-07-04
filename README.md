@@ -1,3 +1,3 @@
 # GRPC demo application
 
-grpc를 typescript로 사용해보는 데모 프로젝트.
+grpc + typescript + docker + cloudflare 테스트
